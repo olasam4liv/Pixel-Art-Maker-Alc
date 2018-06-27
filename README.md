@@ -5,5 +5,9 @@
 
  Open `designs.js` to see how the project was built and it's functionality.
 
-For specific, detailed instructions, look at the project instructions in the [My Project Link](https://olasam4liv.github.io/Pixel-Art-Maker-Alc/).
+For detailed of the project here is the [My Project Link](https://olasam4liv.github.io/Pixel-Art-Maker-Alc/).
+
+
+## For contributions and comments, please contact me via olasam4liv@gmail.com
+
 
