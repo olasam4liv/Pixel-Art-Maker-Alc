@@ -58,7 +58,7 @@ function makeGrid() {
 
 
 pixel_Canvas.on('click', 'td', function(){
-
+let color = $('#colorPicker').val();
 // This is to remove/delete the color when you mistakenly click on the wrong column/grid	
 if($(this).attr('style')){
        $(this).removeAttr('style');
