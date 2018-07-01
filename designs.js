@@ -65,7 +65,8 @@ if($(this).attr('style')){
    }
 	// This will paint/fill the column/grid with the selected color
    else{
-       $(this).css('style', 'background-color:' + color);
+      
+	   $(this).css('background-color', color);
    }
 	
 	
