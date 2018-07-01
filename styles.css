@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-color: #95cae2;
-   
+    color: #142340;
 }
 
 h1 {
@@ -42,4 +42,19 @@ input[type=number] {
 }
 .error {
      color: red;
+}
+
+span {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0.2em;
+    color: #095cad;
+}
+.wel{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0.1em;
+    color: #920f87;
+
 }
