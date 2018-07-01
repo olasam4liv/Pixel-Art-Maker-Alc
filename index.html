@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+        <div class="wel">Welcome to</div>
     <h1>Lab: Pixel Art Maker</h1>
-
+<span id="time"></span>
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
+       Grid Width:
         <input type="number" id="inputWeight" name="width" min="1" value="1">
       <!-- <input type="submit" onclick="makeGrid()" > -->
        <button id="submit" type="button" onclick="makeGrid()">Create Grid</button>
     </form>
     
-        <span id="error"></span>
+        <div id="error"></div>
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
