@@ -61,3 +61,33 @@ pixel_Canvas.on('click', 'td', function(){
 	let color = $('#colorPicker').val();
     $(this).css('background-color', color);
 });
+
+
+/// This is not part of the project, I just feel like adding it from my own initiative.
+
+// Function to check time
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function startTime() {
+var stringTime = "The Time Says: "
+    
+  var today = new Date();
+  //variables for Hour, Minutes and Seconds
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+    // add a zero in front of numbers<10
+  m = checkTime(m);
+  s = checkTime(s);
+  // To display the time on the browser to it's assigned id
+  document.getElementById('time').innerHTML = stringTime + h + ":" + m + ":" + s;
+  t = setTimeout(function() {
+    startTime()
+  }, 500);
+}
+startTime();
