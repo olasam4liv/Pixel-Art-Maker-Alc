@@ -56,19 +56,22 @@ function makeGrid() {
 }
 }
 
-pixel_Canvas.on('click', 'td', function(){
-let color = $('#colorPicker').val();
-    $(this).css('background-color', color);
-// This is to remove/delete the color when you mistakenly click on the wrong column/grid	
-    if($(this).attr('style')){
-  $(this).removeAttr('style');
-    }	
-// This will paint/fill the column/grid with the selected color	
-    else{
-        $(this).css('style', 'background-color:' + color);
-    }
-});
 
+pixel_Canvas.on('click', 'td', function(){
+    let color = $('#colorPicker').val();
+    // This is to remove/delete the color when you mistakenly click on the wrong column/grid	
+    if($(this).attr('style')){
+           $(this).removeAttr('style');
+       }
+        // This will paint/fill the column/grid with the selected color
+       else{
+          
+           $(this).css('background-color', color);
+       }
+        
+        
+        
+    });
 
 
 /// This is not part of the project, I just feel like adding it from my own initiative.
@@ -82,13 +85,13 @@ function checkTime(i) {
 }
 
 function startTime() {
-var stringTime = "The Time Says: "
+let stringTime = "The Time Says: "
     
-  var today = new Date();
+  let today = new Date();
   //variables for Hour, Minutes and Seconds
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
     // add a zero in front of numbers<10
   m = checkTime(m);
   s = checkTime(s);
